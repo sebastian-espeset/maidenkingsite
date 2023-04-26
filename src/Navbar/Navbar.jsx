@@ -12,12 +12,11 @@ export default function Navbar() {
           </div>
         </div>
         <div className="right">
-          stuff
-          <div className="hamburger">
-            <span className="line1"></span>
-            <span className="line2"></span>
-            <span className="line3"></span>
-          </div>
+          <a>About</a>
+          <a>Upcoming Shows</a>
+          <a>Music</a>
+          <a>Press</a>
+          <a>Contact</a>
         </div>
       </div>
     </div>
