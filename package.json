@@ -1,9 +1,9 @@
 {
+  "homepage": "https://sebastian-espeset.github.io/maidenkingsite",
   "name": "maidenking",
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sebastian-espeset.github.io/maidenkingsite",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
