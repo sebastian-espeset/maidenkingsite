@@ -5,11 +5,9 @@ export default function Navbar() {
     <div className="nav">
       <div className="wrapper">
         <div className="left">
-          <a className="name">Maiden King</a>
+          <a className="name">M A I D E N K I N G</a>
 
-          <div className="itemContainer">
-            <img src="/assets/tempNar.png" alt="" />
-          </div>
+          <div className="itemContainer"></div>
         </div>
         <div className="right">
           <a>About</a>

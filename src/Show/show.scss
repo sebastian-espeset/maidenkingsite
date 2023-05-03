@@ -1,5 +1,17 @@
+@import "../global.scss";
+
 .showinfo{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    font-size: 20px;
+    border: 1px solid whitesmoke;
+    padding: 1%;
+    margin: 1%;
+    @include mobile{
+        width:100%;
+        font-size: 12px;
+        padding:none;
+        margin:none;
+    }
 }

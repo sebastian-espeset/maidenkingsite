@@ -14,9 +14,9 @@ function App() {
       <About />
       <UpcompingShows />
       <Music />
-      <Press />
+      {/* <Press /> */}
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -8,11 +8,25 @@ let showList = [
     venue: "The Void",
     purchaseUrl: "/",
   },
+  {
+    date: "jul 7",
+    time: "8pm",
+    venue: "The Void",
+    purchaseUrl: "/",
+  },
+  {
+    date: "jul 7",
+    time: "8pm",
+    venue: "The Void",
+    purchaseUrl: "/",
+  },
 ];
 export default function UpcompingShows() {
   return (
     <div className="upcomingShows">
-      <h1>Upcoming Shows</h1>
+      <div className="title">
+        <h1>Upcomping shows</h1>
+      </div>
       <div className="showWrapper">
         {/* <Show /> */}
         {showList.map((show, index) => {

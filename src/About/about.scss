@@ -1,7 +1,29 @@
+@import "../global.scss";
+
 .about{
-    background-color: #d86b05;
+    background-color:black;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    .title{
+        font-family: 'Poltawski Nowy', serif;
+        @include mobile{
+            font-size: 12px;
+        }
+    }
+    .copyBox{
+        width:80%;
+        text-align: center;
+        .copy{
+            width: 100%;
+            height: auto;
+            font-size: 25px;
+            color: whitesmoke;
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+    }
 }
