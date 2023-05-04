@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
+import VideoPlayer from "./VideoPlayer/VideoPlayer";
 import About from "./About/About";
 import UpcompingShows from "./UpcomingShows/UpcompingShows";
 import Music from "./Releases/Music";
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <VideoPlayer />
       <About />
       <UpcompingShows />
       <Music />
