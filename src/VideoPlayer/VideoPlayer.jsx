@@ -7,7 +7,7 @@ export default function VideoPlayer() {
       <div className="title">
         <h1>Who Else Were We Supposed To Become?</h1>
       </div>
-      <video src={Untitled} autoPlay muted></video>
+      <video src={Untitled} autoPlay muted playsinline></video>
     </div>
   );
 }
