@@ -1,7 +1,6 @@
 import "./show.scss";
 
 export default function Show({ date, time, venue, purchaseUrl }) {
-  console.log(date);
   return (
     <div className="showinfo">
       <div className="showdate">

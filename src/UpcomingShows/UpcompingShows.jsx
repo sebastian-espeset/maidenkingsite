@@ -3,27 +3,27 @@ import Show from "../Show/Show";
 // this object will help to update show info manually. will do for now.
 let showList = [
   {
-    date: "jul 7",
+    date: "jul 4",
     time: "8pm",
     venue: "The Void",
     purchaseUrl: "/",
   },
   {
-    date: "jul 7",
-    time: "8pm",
-    venue: "The Void",
+    date: "aug 8",
+    time: "5pm",
+    venue: "Cathedral Basilica",
     purchaseUrl: "/",
   },
   {
-    date: "jul 7",
-    time: "8pm",
-    venue: "The Void",
+    date: "nov 5",
+    time: "11pm",
+    venue: "The Houses of Par",
     purchaseUrl: "/",
   },
 ];
 export default function UpcompingShows() {
   return (
-    <div className="upcomingShows">
+    <div className="upcomingShows" id="upcomingShows">
       <div className="title">
         <h1>Upcomping shows</h1>
       </div>

@@ -10,11 +10,11 @@ export default function Navbar() {
           <div className="itemContainer"></div>
         </div>
         <div className="right">
-          <a>About</a>
-          <a>Upcoming Shows</a>
-          <a>Music</a>
+          <a href="#about">About</a>
+          <a href="#upcomingShows">Upcoming Shows</a>
+          <a href="#music">Music</a>
           <a>Press</a>
-          <a>Contact</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
