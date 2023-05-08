@@ -5,7 +5,9 @@ export default function Navbar() {
     <div className="nav">
       <div className="wrapper">
         <div className="left">
-          <a className="name">M A I D E N K I N G</a>
+          <a className="name" href="#video">
+            M A I D E N K I N G
+          </a>
 
           <div className="itemContainer"></div>
         </div>

@@ -10,6 +10,14 @@
     background-color: black;
     position: fixed;
     filter:opacity(.5);
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color:rgb(143, 128, 242);
+        cursor: pointer;
+  }
     .wrapper{
         padding:10px 30px;
         display: flex;
