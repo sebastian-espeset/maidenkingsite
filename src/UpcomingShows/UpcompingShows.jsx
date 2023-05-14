@@ -23,12 +23,11 @@ let showList = [
 ];
 export default function UpcompingShows() {
   return (
-    <div className="upcomingShows" id="upcomingShows">
+    <div className="upcomingShows" id="upcomingShows" name="upcomingShows">
       <div className="title">
         <h1>Upcomping shows</h1>
       </div>
       <div className="showWrapper">
-        {/* <Show /> */}
         {showList.map((show, index) => {
           return (
             <Show

@@ -3,14 +3,12 @@ import { useRef, useEffect } from "react";
 
 export default function Navbar({ isMobile, menuOpen, setMenuOpen }) {
   // nav bar disappears
-  console.log(isMobile);
   const navRef = useRef();
   useEffect(() => {
     let lastScrollTop;
     const navbar = navRef.current;
     window.addEventListener("scroll", function () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      console.log(navbar);
       if (scrollTop > lastScrollTop) {
         navbar.style.top = "-80px";
       } else {

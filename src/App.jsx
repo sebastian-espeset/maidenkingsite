@@ -26,7 +26,7 @@ function App() {
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
       />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <VideoPlayer />
       <About />
       <UpcompingShows />

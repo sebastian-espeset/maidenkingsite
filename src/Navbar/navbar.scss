@@ -12,7 +12,8 @@
     transition: 0.5s;
     filter:opacity(.5);
     @include mobile{
-        height: fit-content;
+        height: 60px;
+        filter: opacity(.7);
         .rightMobile{
             display: flex;
             flex-direction: row-reverse;
