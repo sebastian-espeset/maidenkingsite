@@ -1,10 +1,19 @@
 @import '../global.scss';
-
+@font-face {
+    font-family: 'CAT-Eckman';
+    src: url('../fonts/CAT-Eckmann.ttf');
+}
 .contactSection{
     background-color: black;
     width: 100%;
     height: auto;
     padding-bottom: 2%;
+    .title{
+        font-family: $h1;
+        @include mobile{
+            font-size: 12px;
+        }
+    }
     .contactContents{
         width: 100%;
         display: flex;
@@ -73,12 +82,6 @@
                     }
                 }
             }
-        }
-    }
-    .title{
-        font-family: 'Poltawski Nowy', serif;
-        @include mobile{
-            font-size: 12px;
         }
     }
 }

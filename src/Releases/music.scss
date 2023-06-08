@@ -13,7 +13,7 @@
         padding-top: 2px;
     }
     .title{
-        font-family: 'Poltawski Nowy', serif;
+        font-family: $h1;
         @include mobile{
             font-size: 12px;
         }

@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'CAT-Eckman';
+    src: url('./fonts/CAT-Eckmann.ttf');
+}
+
 $mainColor:#192e99;
 $secondaryColor:#3d5cf5;
 $tertiaryColor:#f5933d;
 $width: 768px;
+$h1:'CAT-Eckman';
 
 @mixin mobile{
     @media (max-width: #{$width}){

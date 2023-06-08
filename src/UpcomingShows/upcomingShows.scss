@@ -1,5 +1,8 @@
 @import "../global.scss";
-
+@font-face {
+    font-family: 'CAT-Eckman';
+    src: url('../fonts/CAT-Eckmann.ttf');
+}
 .upcomingShows{
     background-color: black;
     width:100%;
@@ -14,7 +17,7 @@
         width: 100%;
     }
     .title{
-        font-family: 'Poltawski Nowy', serif;
+        font-family: $h1;
         @include mobile{
             font-size: 12px;
         }
