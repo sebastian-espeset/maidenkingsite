@@ -8,7 +8,7 @@ export default function Music() {
   return (
     <div className="music" name="music" id="music">
       <div className="title">
-        <h1>Music</h1>
+        <h1>Music...</h1>
       </div>
       <div className="musiccontainer">
         <div className="platformBox">
