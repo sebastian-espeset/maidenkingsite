@@ -18,49 +18,41 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         .formBlock{
-            width: 50%;
+            width:100%;
             display:flex;
             align-items: center;
             justify-content: center;
             .formWrapper{
+                width: 40%;
+                @include mobile{
+                    width:80%;
+                }
                 input{
+                    font-family: 'Courier New', Courier, monospace;
                     height: 40px;
                     font-size: 20px;
+                    width: 100%;
                     @include mobile{
                         height:20px;
-                        font-size: 10px;
+                        font-size: 20px;
                     }
                 }
                 .nameInputs{
-                    font-family: 'Poltawski Nowy', serif;
                     padding: 5px;
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    .firstName{
-                        padding-right:10px;
-                    }
-                   
                 }
                 .emailAddressInputs{
                     padding: 5px;
-                    input{
-                        width: 100%;
-                    }
                 }
                 .messageInput{
                     padding: 5px;
-                    input{
-                        padding:2px;
-                        width: 100%;
-                        height: 80px;
+                    textarea{
+                        font-family: 'Courier New', Courier, monospace;
+                        padding:3px;
                         font-size: 20px;
-                        @include mobile{
-                            font-size: 12px;
-                        }
+                        width: 100%;
+                        height: 90px;
                     }
                 }
                 .submitFormButton{
@@ -68,7 +60,7 @@
                     align-content: center;
                     justify-content: center;
                     button{
-                        font-size: 23px;
+                        font-size: 30px;
                         font-family: $h1;
                         width: 200px;
                         height: 50px;
@@ -94,9 +86,9 @@
                 span{
                     color:white;
                     font-family: $h1;
-                    font-size: large;
+                    font-size: 30px;
                     position: absolute;
-                    margin-top: 19px;
+                    margin-top: 30px;
                 }
             }
         }
