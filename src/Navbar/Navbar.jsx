@@ -29,16 +29,16 @@ export default function Navbar({ isMobile, menuOpen, setMenuOpen }) {
         <div className={isMobile ? "rightMobile" : "right"}>
           <div className="nonMobile">
             <a href="#about">About</a>
-            <a href="#upcomingShows">Upcoming Shows</a>
+            {/* <a href="#upcomingShows">Upcoming Shows</a> */}
             <a href="#music">Music</a>
-            <a>Press</a>
+            {/* <a>Press</a> */}
             <a href="#contact">Contact</a>
           </div>
-          <div className="menuButton" onClick={() => setMenuOpen(!menuOpen)}>
+          {/* <div className="menuButton" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
