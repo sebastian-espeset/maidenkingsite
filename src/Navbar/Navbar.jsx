@@ -1,7 +1,9 @@
 import "./navbar.scss";
 import { useRef, useEffect } from "react";
 
-export default function Navbar({ isMobile, menuOpen, setMenuOpen }) {
+// Props are commented out because we arent currently using them. No need for menu as of 6/12.
+// Bottom menu button is commented out as well
+export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
   // nav bar disappears
   const navRef = useRef();
   useEffect(() => {
@@ -30,9 +32,9 @@ export default function Navbar({ isMobile, menuOpen, setMenuOpen }) {
           <div className="nonMobile">
             <a href="#about">About</a>
             {/* <a href="#upcomingShows">Upcoming Shows</a> */}
+            <a href="#contact">Contact</a>
             <a href="#music">Music</a>
             {/* <a>Press</a> */}
-            <a href="#contact">Contact</a>
           </div>
           {/* <div className="menuButton" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>

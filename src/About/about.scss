@@ -4,14 +4,14 @@
     src: url('../fonts/CAT-Eckmann.ttf');
 }
 .about{
-    background-color:black;
-    font-family: 'Montserrat', sans-serif;
+    background-color:$mainColor;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     .title{
         font-family: $h1;
+        color: $secondaryColor;
         @include mobile{
             font-size: 12px;
         }
@@ -19,10 +19,14 @@
     .copyBox{
         width:80%;
         text-align: center;
+        a{
+            text-decoration: wavy;
+        }
         .copy{
             width: 100%;
             height: auto;
-            font-size: 25px;
+            font-size: 35px;
+            font-family: 'Fira Sans', sans-serif;
             color: whitesmoke;
             @include mobile{
                 font-size: 18px;

@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .music{
-    background-color: black;
+    background-color: $tertiaryColor;
     width: 100%;
     height:450px;
     display: flex;
@@ -14,6 +14,7 @@
     }
     .title{
         font-family: $h1;
+        color: $secondaryColor;
         @include mobile{
             font-size: 12px;
         }

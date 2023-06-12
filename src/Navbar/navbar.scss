@@ -7,16 +7,13 @@
     font-family: $h1;
     width:100%;
     height: 10vh;
-    color:white;
     top: 0;
     z-index: 3;
-    background-color: black;
+    background-color: $tertiaryColor;
     position: fixed;
     transition: 0.5s;
-    filter:opacity(.5);
     @include mobile{
         height: 60px;
-        filter: opacity(.7);
         .rightMobile{
             display: flex;
             flex-direction: row-reverse;
@@ -24,7 +21,7 @@
     }
     a{
         text-decoration: none;
-        color: white;
+        color: $secondaryColor;
     }
     a:hover{
         color:rgb(143, 128, 242);
@@ -84,7 +81,7 @@
                 justify-content:space-evenly;
                 a{
                     text-decoration: none;
-                    color: whitesmoke;
+                    color: $secondaryColor;
                     scroll-behavior: smooth;
                 }
                 a:hover{
