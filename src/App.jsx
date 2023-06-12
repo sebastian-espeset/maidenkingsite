@@ -3,7 +3,7 @@ import Navbar from "./Navbar/Navbar";
 import Menu from "./Menu/Menu";
 import VideoPlayer from "./VideoPlayer/VideoPlayer";
 import About from "./About/About";
-import UpcompingShows from "./UpcomingShows/UpcompingShows";
+// import UpcompingShows from "./UpcomingShows/UpcompingShows";
 import Music from "./Releases/Music";
 import Contact from "./Contact/Contact";
 import { useEffect, useState } from "react";
@@ -29,7 +29,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <VideoPlayer />
       <About />
-      <UpcompingShows />
+      {/* <UpcompingShows /> */}
       <Contact />
       <Music />
     </>
