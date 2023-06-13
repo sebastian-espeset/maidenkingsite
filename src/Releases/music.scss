@@ -7,8 +7,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
+    bottom: 0;
     @include mobile{
-        height: 140px;
+        height: 130px;
         justify-content: space-around;
     }
     .title{
@@ -23,6 +25,7 @@
         justify-content: space-between;
         align-items: center;
         width: 90%;
+        margin-bottom: 35px;
         @include mobile{
             width: 95%;
             height: 500px;
@@ -37,8 +40,8 @@
             padding: 3.1%;
             @include mobile{
                 height: 90%;
-                margin-bottom: none;
                 padding: 3px;
+                
             }
             img{
                 width:80%;
