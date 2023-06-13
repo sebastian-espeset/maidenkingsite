@@ -17,6 +17,7 @@
         color: $secondaryColor;
         @include mobile{
             font-size: 12px;
+            margin-top: 30px;
         }
     }
     .musiccontainer{
@@ -27,7 +28,7 @@
         margin-bottom: 35px;
         @include mobile{
             width: 95%;
-            height: 500px;
+            height: 100px;
         }
         .platformBox{
             display: flex;
