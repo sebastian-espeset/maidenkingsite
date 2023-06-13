@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    overflow: auto;
     bottom: 0;
     @include mobile{
         height: 200px;
