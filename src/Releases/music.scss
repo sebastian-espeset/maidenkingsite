@@ -10,7 +10,7 @@
     overflow: auto;
     bottom: 0;
     @include mobile{
-        height: 130px;
+        height: 200px;
         justify-content: space-around;
     }
     .title{
