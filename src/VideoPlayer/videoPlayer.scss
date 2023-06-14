@@ -28,6 +28,51 @@
         }
         .title{
             font-family: "elfreth", sans-serif;
+            animation: fadeIn 2s;
+            -webkit-animation: fadeIn 2s;
+            -moz-animation: fadeIn 2s;
+            -o-animation: fadeIn 2s;
+            -ms-animation: fadeIn 2s;
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            @-webkit-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            @-moz-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            @-o-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            @-ms-keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
             margin-top: 180px;
             font-weight: 300;
             font-style: normal;
@@ -39,7 +84,7 @@
             @include mobile{
                 font-size: 15px;
                 text-align: center;
-                margin-top: 1300px;
+                margin-top: 1270px;
                 width:100%;
             }
         }
