@@ -2,9 +2,10 @@
 
 .imagebox {
     background-color: $mainColor;
-    height: 900px;
+    height: 650px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-bottom: none;
     display:flex;
     flex-direction: row;
     align-items: flex-start;
