@@ -1,19 +1,16 @@
 import "./music.scss";
-import apple from "../assets/apple.svg";
-import spotify from "../assets/spotify.png";
-import bandcamp from "../assets/bandcamp.svg";
-import youtube from "../assets/youtube.svg";
+import newApple from "../assets/newApple.svg";
+import newSpot from "../assets/newSpot.svg";
+import newBandcamp from "../assets/newBandcamp.png";
+import newYoutube from "../assets/newYoutube.png";
 
 export default function Music() {
   return (
     <div className="music" name="music" id="music">
-      {/* <div className="title">
-        <h1>Music...</h1>
-      </div> */}
       <div className="musiccontainer">
         <div className="platformBox">
           <img
-            src={apple}
+            src={newApple}
             alt="apple music link"
             onClick={() => {
               window.open(
@@ -25,8 +22,9 @@ export default function Music() {
         </div>
         <div className="platformBox">
           <img
-            src={spotify}
+            src={newSpot}
             alt="spotify link"
+            style={{ filter: "invert(100%)" }}
             onClick={() => {
               window.open(
                 "https://open.spotify.com/artist/2HgKV0kbxHbl3LAsuo9Cb0?si=wSnlILbOTDOFMJlEINSnbQ",
@@ -37,9 +35,8 @@ export default function Music() {
         </div>
         <div className="platformBox">
           <img
-            src={bandcamp}
+            src={newBandcamp}
             alt="bandcamp link"
-            style={{ filter: "invert(100%)" }}
             onClick={() => {
               window.open(
                 "https://maidenking.bandcamp.com/track/echo",
@@ -50,8 +47,9 @@ export default function Music() {
         </div>
         <div className="platformBox">
           <img
-            src={youtube}
+            src={newYoutube}
             alt="youtube link"
+            style={{ filter: "invert(100%)" }}
             onClick={() => {
               window.open(
                 "https://www.youtube.com/watch?v=3lbI7eDSpz8",

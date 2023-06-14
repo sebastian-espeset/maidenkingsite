@@ -24,7 +24,7 @@ export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
       <div className="wrapper">
         <div className="left">
           <a className="name" href="#video">
-            M A I D E N K I N G
+            MAIDEN KING
           </a>
           <div className="itemContainer"></div>
         </div>
