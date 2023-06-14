@@ -1,34 +1,37 @@
 @import "../global.scss";
 
 .music{
-    background-color: $tertiaryColor;
+    background-color: $mainColor;
     width: 100%;
-    height:300px;
+    height:80px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     bottom: 0;
     @include mobile{
-        height: 200px;
+        height: 70px;
         justify-content: space-around;
     }
-    .title{
-        font-family: $h1;
-        color: $secondaryColor;
-        @include mobile{
-            font-size: 12px;
-            margin-top: 30px;
-        }
-    }
+    // .title{
+    //     font-family: $h1;
+    //     color: $secondaryColor;
+    //     @include mobile{
+    //         font-size: 12px;
+    //         margin-top: 30px;
+    //     }
+    // }
     .musiccontainer{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        margin-bottom: 35px;
+        // justify-content: space-evenly;
+        // align-items: center;
+        width: 33%;
+        // margin-bottom: 35px;
         @include mobile{
             width: 95%;
-            height: 100px;
+            height: 100%;
+            padding:2px;
+            margin-bottom: 75px;
         }
         .platformBox{
             display: flex;
@@ -37,11 +40,10 @@
             align-items: center;
             width: 100%;
             height: auto;
-            padding: 3.1%;
+            // padding: 3.1%;
             @include mobile{
                 height: 90%;
-                padding: 3px;
-                
+                padding: 5px;
             }
             img{
                 width:80%;

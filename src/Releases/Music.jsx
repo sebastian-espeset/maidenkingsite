@@ -7,9 +7,9 @@ import youtube from "../assets/youtube.svg";
 export default function Music() {
   return (
     <div className="music" name="music" id="music">
-      <div className="title">
+      {/* <div className="title">
         <h1>Music...</h1>
-      </div>
+      </div> */}
       <div className="musiccontainer">
         <div className="platformBox">
           <img

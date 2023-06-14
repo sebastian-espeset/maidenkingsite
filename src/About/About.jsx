@@ -29,21 +29,20 @@ export default function About() {
           <a href="https://leroybach.com/" rel="noreferrer" target="_blank">
             Leroy Bach
           </a>
-          ,
+          ,{" "}
           <a
             href="https://www.artistmarvintate.com/"
             rel="noreferrer"
             target="_blank"
           >
             Marvin Tate
-          </a>{" "}
-          ,
+          </a>
+          ,{" "}
           <a
             href="https://www.iamaliciawalter.com/"
             rel="noreferrer"
             target="_blank"
           >
-            {" "}
             Alicia Walters
           </a>
           ,{" "}
@@ -54,13 +53,12 @@ export default function About() {
           >
             Jenn Hall
           </a>
-          ,
+          ,{" "}
           <a
             href="https://astrachanmusic.bandcamp.com/"
             rel="noreferrer"
             target="_blank"
           >
-            {" "}
             Astrachan
           </a>
           ,{" "}
@@ -71,7 +69,7 @@ export default function About() {
           >
             Claude
           </a>
-          ,
+          ,{" "}
           <a
             href="http://www.joegeorgemusic.net/"
             rel="noreferrer"

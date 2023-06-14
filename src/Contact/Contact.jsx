@@ -53,7 +53,7 @@ export default function Contact() {
                     name="from_name"
                     type="text"
                     onChange={changeHandler}
-                    placeholder="First name"
+                    placeholder="first name"
                   />
                 </div>
               </div>
