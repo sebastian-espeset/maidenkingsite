@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
 import Menu from "./Menu/Menu";
-import VideoPlayer from "./VideoPlayer/VideoPlayer";
+import LandingPhoto from "./LandingPhoto/LandingPhoto";
 import About from "./About/About";
 // import UpcompingShows from "./UpcomingShows/UpcompingShows";
 import Music from "./Releases/Music";
@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   // if mobile view, we pass mobile prop as true to navbar so that the menu will render
+  // this is for future menu implementation
   const [isMobile, setIsMobile] = useState(false);
   // we define menu open here so we can pass it to navbar and menu
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ function App() {
         setMenuOpen={setMenuOpen}
       />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <VideoPlayer />
+      <LandingPhoto />
       <About />
       {/* <UpcompingShows /> */}
       <Contact />

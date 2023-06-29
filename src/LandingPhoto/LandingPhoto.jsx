@@ -1,7 +1,7 @@
-import "./videoPlayer.scss";
+import "./landingPhoto.scss";
 import mklpcover from "../assets/mklpcover.png";
 
-export default function VideoPlayer() {
+export default function LandingPhoto() {
   return (
     <div className="imagebox">
       <div className="imgcontainer">
