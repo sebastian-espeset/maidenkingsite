@@ -1,9 +1,7 @@
 import "./App.css";
 import Navbar from "./Navbar/Navbar";
-import Menu from "./Menu/Menu";
 import LandingPhoto from "./LandingPhoto/LandingPhoto";
 import About from "./About/About";
-// import UpcompingShows from "./UpcomingShows/UpcompingShows";
 import Music from "./Releases/Music";
 import Contact from "./Contact/Contact";
 import { useEffect, useState } from "react";
@@ -27,10 +25,8 @@ function App() {
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
       />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <LandingPhoto />
       <About />
-      {/* <UpcompingShows /> */}
       <Contact />
       <Music />
     </>

@@ -1,7 +1,7 @@
 import "./navbar.scss";
 import { useRef, useEffect } from "react";
 
-// Props are commented out because we arent currently using them. No need for menu as of 6/12.
+// Props are commented out because we arent currently using them. No need for menu as of 7/11.
 // Bottom menu button is commented out as well
 export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
   // nav bar disappears
@@ -31,16 +31,9 @@ export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
         <div className={isMobile ? "rightMobile" : "right"}>
           <div className="nonMobile">
             <a href="#about">About</a>
-            {/* <a href="#upcomingShows">Upcoming Shows</a> */}
             <a href="#contact">Contact</a>
             <a href="#music">Music</a>
-            {/* <a>Press</a> */}
           </div>
-          {/* <div className="menuButton" onClick={() => setMenuOpen(!menuOpen)}>
-            <span className="line1"></span>
-            <span className="line2"></span>
-            <span className="line3"></span>
-          </div> */}
         </div>
       </div>
     </div>
