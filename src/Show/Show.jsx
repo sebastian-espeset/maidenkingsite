@@ -1,5 +1,5 @@
 import "./show.scss";
-
+// to be used later
 export default function Show({ date, time, venue, purchaseUrl }) {
   return (
     <div className="showinfo">

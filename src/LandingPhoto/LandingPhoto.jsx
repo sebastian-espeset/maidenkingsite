@@ -1,5 +1,5 @@
 import "./landingPhoto.scss";
-import mklpcover from "../assets/mklpcover.png";
+import mklpcover from "../assets/mklpcover.jpg";
 
 export default function LandingPhoto() {
   return (

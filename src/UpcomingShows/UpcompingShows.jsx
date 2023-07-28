@@ -1,6 +1,7 @@
 import "./upcomingShows.scss";
 import Show from "../Show/Show";
 // this object will help to update show info manually. will do for now.
+// component to be used later
 let showList = [
   {
     date: "jul 4",
