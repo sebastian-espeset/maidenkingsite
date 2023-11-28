@@ -4,11 +4,26 @@
     src: url('../fonts/CAT-Eckmann.ttf');
 }
 .about{
-    background-color:$mainColor;
     width: 100%;
+    margin-top:4.204vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @keyframes blur {
+        0%{
+            -webkit-filter: blur(50px);
+            -moz-filter: blur(50px);
+            -o-filter: blur(50px);
+            -ms-filter: blur(50px);
+          }
+        50% {
+          -webkit-filter: blur(0px);
+          -moz-filter: blur(0px);
+          -o-filter: blur(0px);
+          -ms-filter: blur(0px);
+        }
+      }
+      animation: blur 12s ease-in-out 0s ;
     .title{
         font-family: $h1;
         color: $secondaryColor;
@@ -25,9 +40,17 @@
         .copy{
             width: 100%;
             height: auto;
-            font-size: 35px;
+            font-size: 1.839vw;
             font-family: "hightower-text",serif;
             color: whitesmoke;
+            img{
+                max-width: 50vw;
+                height: 4vw;
+                @include mobile{
+                    max-width: 80vw;
+                    height: 6vw;
+                }
+            }
             @include mobile{
                 font-size: 18px;
             }

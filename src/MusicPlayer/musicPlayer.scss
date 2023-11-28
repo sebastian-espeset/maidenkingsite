@@ -1,0 +1,53 @@
+@import '../global.scss';
+
+.music-player-container{
+    width:50%;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: end;
+    opacity: 80%;
+    background-color: $mainColor;
+    @keyframes blur {
+        0%{
+            -webkit-filter: blur(50px);
+            -moz-filter: blur(50px);
+            -o-filter: blur(50px);
+            -ms-filter: blur(50px);
+          }
+        50% {
+          -webkit-filter: blur(0px);
+          -moz-filter: blur(0px);
+          -o-filter: blur(0px);
+          -ms-filter: blur(0px);
+        }
+      }
+      animation: blur 12s ease-in-out 0s ;
+    @include mobile{
+        width: 100%;
+        position: relative;
+        background-color: $mainColor;
+        margin-left: 0px;
+        // margin-top: 10%;
+        margin-bottom: 50px;
+        padding-bottom: none;
+        z-index: 0;
+        opacity: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.music-iframe{
+    max-height: 80px;
+    border-radius: 14px;
+    background-color:$mainColor;
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 0px !important;
+    @include mobile{
+        max-height:72px;
+        width: auto;
+        border-radius: 14px;
+    }
+}

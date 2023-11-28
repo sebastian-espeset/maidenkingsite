@@ -1,6 +1,5 @@
 import "./navbar.scss";
 import { useRef, useEffect } from "react";
-
 // Props are commented out because we arent currently using them. No need for menu as of 7/11.
 // Bottom menu button is commented out as well
 export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
@@ -26,7 +25,6 @@ export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
           <a className="name" href="#video">
             MAIDEN KING
           </a>
-          <div className="itemContainer"></div>
         </div>
         <div className={isMobile ? "rightMobile" : "right"}>
           <div className="nonMobile">

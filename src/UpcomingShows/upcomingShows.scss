@@ -4,7 +4,7 @@
     src: url('../fonts/CAT-Eckmann.ttf');
 }
 .upcomingShows{
-    background-color: black;
+    background-color: $mainColor;
     width:100%;
     display: flex;
     justify-content: center;
@@ -12,6 +12,21 @@
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     padding: 2em;
+    @keyframes blur {
+        0%{
+            -webkit-filter: blur(50px);
+            -moz-filter: blur(50px);
+            -o-filter: blur(50px);
+            -ms-filter: blur(50px);
+          }
+        50% {
+          -webkit-filter: blur(0px);
+          -moz-filter: blur(0px);
+          -o-filter: blur(0px);
+          -ms-filter: blur(0px);
+        }
+      }
+      animation: blur 12s ease-in-out 0s ;
     @include mobile{
         padding:0;
         width: 100%;
@@ -23,7 +38,6 @@
         }
     }
     .showWrapper{
-        background-color: black;
         width: 80%;
         display: flex;
         align-items: center;

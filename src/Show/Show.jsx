@@ -13,7 +13,7 @@ export default function Show({ date, time, venue, purchaseUrl }) {
       </div>
       <div className="showactions">
         <span>
-          <button className="tickers" href={purchaseUrl}>
+          <button className="purchase-button" href={purchaseUrl}>
             Buy tickets
           </button>
         </span>

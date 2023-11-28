@@ -12,6 +12,21 @@
     background-color: $tertiaryColor;
     position: fixed;
     transition: 0.5s;
+    @keyframes blur {
+        0%{
+            -webkit-filter: blur(50px);
+            -moz-filter: blur(50px);
+            -o-filter: blur(50px);
+            -ms-filter: blur(50px);
+          }
+        50% {
+          -webkit-filter: blur(0px);
+          -moz-filter: blur(0px);
+          -o-filter: blur(0px);
+          -ms-filter: blur(0px);
+        }
+      }
+      animation: blur 12s ease-in-out 0s ;
     @include mobile{
         height: 40px;
         .rightMobile{
@@ -28,7 +43,7 @@
         cursor: pointer;
   }
     .wrapper{
-        padding:10px 30px;
+        padding:0.525vw 1.576vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -45,21 +60,6 @@
                 font-family: "CAT-Eckman";
                 @include mobile{
                     font-size: 20px;
-                }
-            }
-            .itemContainer{
-                display:flex;
-                align-items: center;
-                margin-left: 30px;
- 
-                img{
-                    width: 80px;
-                    height: 80px;
-                    filter: blur(1px);
-                    @include mobile{
-                        width: 40px;
-                        height: 40px;
-                    }
                 }
             }
         }
@@ -88,15 +88,6 @@
                 a:hover{
                       color:rgb(143, 128, 242);
                       cursor: pointer;
-                }
-            }
-            img{
-                width: 80px;
-                height: 80px;
-                filter: blur(1px);
-                @include mobile{
-                    width: 40px;
-                    height: 40px;
                 }
             }
         }
