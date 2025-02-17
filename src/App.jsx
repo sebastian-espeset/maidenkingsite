@@ -3,7 +3,7 @@ import LandingComponent from "./LandingComponent/LandingComponent";
 import Navbar from "./Navbar/Navbar";
 import LandingPhoto from "./LandingPhoto/LandingPhoto";
 import About from "./About/About";
-// import UpcomingShows from "./UpcomingShows/UpcompingShows";
+import UpcomingShows from "./UpcomingShows/UpcompingShows";
 import VideoPlayer from "./VideoPlayer/VideoPlayer";
 import MusicPlayer from "./MusicPlayer/MusicPlayer";
 // import Contact from "./Contact/Contact";
@@ -33,7 +33,7 @@ function App() {
         />
         <LandingPhoto />
         <About />
-        {/* <UpcomingShows /> */}
+        <UpcomingShows />
         {/* <Contact /> */}
         <VideoPlayer />
         <MusicPlayer />
@@ -51,7 +51,7 @@ function App() {
       />
       <LandingPhoto />
       <About />
-      {/* <UpcomingShows /> */}
+      <UpcomingShows />
       {/* <Contact /> */}
       <VideoPlayer />
       <MusicPlayer />

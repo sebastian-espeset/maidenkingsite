@@ -1,46 +1,82 @@
 @import "../global.scss";
-@font-face {
-    font-family: 'CAT-Eckman';
-    src: url('../fonts/CAT-Eckmann.ttf');
-}
-.upcomingShows{
+
+.upcomingShows {
     background-color: $mainColor;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     padding: 2em;
+    text-align: center;
+
     @keyframes blur {
-        0%{
-            -webkit-filter: blur(50px);
-            -moz-filter: blur(50px);
-            -o-filter: blur(50px);
-            -ms-filter: blur(50px);
-          }
-        50% {
-          -webkit-filter: blur(0px);
-          -moz-filter: blur(0px);
-          -o-filter: blur(0px);
-          -ms-filter: blur(0px);
-        }
-      }
-      animation: blur 12s ease-in-out 0s ;
-    @include mobile{
-        padding:0;
+        0% { filter: blur(50px); }
+        50% { filter: blur(0px); }
+    }
+    animation: blur 12s ease-in-out;
+
+    @include mobile {
+        padding: 1em;
         width: 100%;
     }
-    .title{
+
+    .title {
         font-family: $h1;
-        @include mobile{
-            font-size: 12px;
+        font-size: 2rem;
+        margin-bottom: 1em;
+
+        @include mobile {
+            font-size: 1.2rem;
         }
     }
-    .showWrapper{
+
+    .showWrapper {
         width: 80%;
         display: flex;
         align-items: center;
         flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .showCard {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1em 2em;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 600px;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .showDate {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .showVenue {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .showLink {
+            margin-top: 0.5em;
+            display: inline-block;
+            font-size: 0.9rem;
+            color: #f1c40f;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+                color: #ffeb3b;
+            }
+        }
     }
 }
