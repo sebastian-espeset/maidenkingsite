@@ -14,7 +14,7 @@ export default function LandingComponent() {
           <h1>Who Else Were We Supposed to Become?</h1>
         </div>
         <div className="date-text-box">
-          <h2>Out 12-1-23</h2>
+          <h2>Out now</h2>
         </div>
       </div>
     );

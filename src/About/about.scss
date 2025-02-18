@@ -9,21 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @keyframes blur {
-        0%{
-            -webkit-filter: blur(50px);
-            -moz-filter: blur(50px);
-            -o-filter: blur(50px);
-            -ms-filter: blur(50px);
-          }
-        50% {
-          -webkit-filter: blur(0px);
-          -moz-filter: blur(0px);
-          -o-filter: blur(0px);
-          -ms-filter: blur(0px);
-        }
-      }
-      animation: blur 12s ease-in-out 0s ;
     .title{
         font-family: $h1;
         color: $secondaryColor;

@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 
 const URL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vTCzuNiBad6EeaA0-EnZko2LGClOQbGwf8q0Re-m7zLmTyixxuF4OCsSQyFFG91HKpW34ZaJplaHP6g/pub?output=csv`;
 
-export default function UpcompingShows() {
-  // the data is an array of shows. Each show is an array of length 3, with location, date, time, and website
-  // to access info about each show; showList[i].c[0].v is the venue,showList[i].c[1].v is the date,showList[i].c[2].v is the time ,showList[i].c[3].v is the website
-  const [showList, setShowList] = useState();
+export default function UpcomingShows() {
+  const [showList, setShowList] = useState([]);
+
   useEffect(() => {
     const fetchShows = async () => {
       try {
@@ -35,33 +34,38 @@ export default function UpcompingShows() {
 
     fetchShows();
   }, []);
-  if (showList != undefined) {
-    return (
-      <div className="upcomingShows" id="upcomingShows">
-        <h1 className="title">Upcoming Shows</h1>
-        <div className="showWrapper">
-          {showList.map((show, index) => (
-            <div key={index} className="showCard">
-              <p className="showDate">{show.date}</p>
-              <p className="showVenue">
-                {show.venue}, {show.time}, {show.city}
-              </p>
-              {show.link && (
-                <a
-                  href={show.link}
-                  className="showLink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tickets
-                </a>
-              )}
+
+  return (
+    <div className="upcomingShows" id="upcomingShows">
+      <h1 className="title">Upcoming Shows</h1>
+      <div className="showWrapper">
+        {showList.length > 0 ? (
+          showList.map((show, index) => (
+            <div key={index} className="showRow">
+              <div className="showDetails">
+                <p className="showDate">{show.date}</p>
+                <p className="showTime">{show.time}</p>
+                <p className="showVenue">{show.venue}</p>
+              </div>
+              <div className="showCity">{show.city}</div>
+              <div className="showAction">
+                {show.link && (
+                  <a
+                    href={show.link}
+                    className="showButton"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tickets
+                  </a>
+                )}
+              </div>
             </div>
-          ))}
-        </div>
+          ))
+        ) : (
+          <span>Loading upcoming shows...</span>
+        )}
       </div>
-    );
-  } else {
-    return <span>Loading upcoming shows...</span>;
-  }
+    </div>
+  );
 }

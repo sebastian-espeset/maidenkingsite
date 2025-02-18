@@ -11,13 +11,6 @@
     flex-direction: column;
     min-width: 80%;
     min-height: 100%;
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        50%{
-            opacity: 1;
-        }
-        100% { opacity: 0; }
-      }
     .title-text-box{
         font-size: 1.319vw;
         animation: fadeIn 8s;
