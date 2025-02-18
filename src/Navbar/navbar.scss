@@ -11,6 +11,7 @@
     z-index: 3;
     background-color: $tertiaryColor;
     position: fixed;
+    transition: 0.5s;
     @include mobile{
         height: 40px;
         .rightMobile{
