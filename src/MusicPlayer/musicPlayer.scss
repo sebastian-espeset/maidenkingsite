@@ -8,6 +8,7 @@
     justify-content: end;
     opacity: 80%;
     background-color: $mainColor;
+    
     @keyframes blur {
         0%{
             -webkit-filter: blur(50px);
@@ -46,7 +47,7 @@
     padding: 0px !important;
     border: 0px !important;
     @include mobile{
-        max-height:72px;
+        max-height:78px;
         width: auto;
         border-radius: 14px;
     }

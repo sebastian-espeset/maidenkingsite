@@ -19,19 +19,16 @@
 
     @include mobile {
         padding: 1em;
-        width: 100%;
+        width: 80%;
     }
 
-    .title {
+    .title{
         font-family: $h1;
-        font-size: 2rem;
-        margin-bottom: 1em;
-
-        @include mobile {
-            font-size: 1.2rem;
+        color: $secondaryColor;
+        @include mobile{
+            font-size: 30px;
         }
     }
-
     .showWrapper {
         width: 80%;
         display: flex;

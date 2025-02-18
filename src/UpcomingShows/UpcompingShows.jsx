@@ -38,7 +38,7 @@ export default function UpcompingShows() {
   if (showList != undefined) {
     return (
       <div className="upcomingShows" id="upcomingShows">
-        <h2 className="title">Upcoming Shows</h2>
+        <h1 className="title">Upcoming Shows</h1>
         <div className="showWrapper">
           {showList.map((show, index) => (
             <div key={index} className="showCard">
