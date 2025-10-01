@@ -16,9 +16,12 @@ export default function About() {
           fun and exciting. These songs revel in the complexities and nuances of
           very simple seeds and relish in the unfolding of a story that never
           ends. Energetic and questioning rock music with flourishes of
-          americana, cinematic orchestrations and textured ambient music. The
-          self produced debut &quot;Who Else Were We Supposed to Become?&quot;
-          releases fall 2023.
+          americana, cinematic orchestrations and textured ambient music.
+          <br />
+          The self produced debut &quot;Who Else Were We Supposed to
+          Become?&quot; was written in fall 2023.
+          <br />
+          <br />
           <br />
           <img src={linebreak1} alt="" />
           <br />

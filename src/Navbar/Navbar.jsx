@@ -30,7 +30,6 @@ export default function Navbar({ isMobile /* menuOpen, setMenuOpen */ }) {
           <div className="nonMobile">
             <a href="#about">About</a>
             <a href="#upcomingShows">Shows</a>
-            <a href="#contact">Contact</a>
             <a href="#music">Music</a>
           </div>
         </div>
