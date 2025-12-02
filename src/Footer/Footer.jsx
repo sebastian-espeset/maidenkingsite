@@ -3,6 +3,7 @@ import newApple from "../assets/newApple.svg";
 import newSpot from "../assets/newSpot.svg";
 import newBandcamp from "../assets/newBandcamp.png";
 import newYoutube from "../assets/newYoutube.png";
+import newTidal from "../assets/newTidal.svg";
 
 export default function Footer() {
   return (
@@ -55,6 +56,15 @@ export default function Footer() {
                 "https://www.youtube.com/watch?v=3lbI7eDSpz8",
                 "_blank"
               );
+            }}
+          />
+        </div>
+        <div className="platformBox">
+          <img
+            src={newTidal}
+            alt="tidal link"
+            onClick={() => {
+              window.open("https://tidal.com/album/392526902", "_blank");
             }}
           />
         </div>

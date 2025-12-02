@@ -19,9 +19,7 @@ export default function About() {
           americana, cinematic orchestrations and textured ambient music.
           <br />
           The self produced debut &quot;Who Else Were We Supposed to
-          Become?&quot; was written in fall 2023.
-          <br />
-          <br />
+          Become?&quot; was released in fall 2023.
           <br />
           <img src={linebreak1} alt="" />
           <br />
